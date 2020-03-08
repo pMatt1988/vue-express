@@ -1,0 +1,14 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>This is a base template for node, express, Hogan, vue with gulp.</h1>
+
+</div>
+</body>
+</html>
