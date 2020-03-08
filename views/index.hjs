@@ -8,7 +8,17 @@
 <body>
 <div class="container">
     <h1>This is a base template for node, express, Hogan, vue with gulp.</h1>
+    <ol>
+        {{#profiles}}
+        <li>{{name}}</li>
+        {{/profiles}}
+    </ol>
 
+
+    <form method="post" action="/join">
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="submit" value="Add Profile">
+    </form>
 </div>
 </body>
 </html>

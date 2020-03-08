@@ -4,9 +4,22 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     const data = {
-        name: 'Home'
-    }
+        name: 'Home',
+        profiles: [
+            {name: 'Mike'},
+            {name: 'Cindy'},
+            {name: 'Joe'}
+        ]
+    };
     res.render('index', data);
+});
+
+router.post('/join', (req, res, next) => {
+    const body= req.body;
+
+    res.json({
+        data: body
+    });
 });
 
 router.get('/json', (req, res, next) => {
